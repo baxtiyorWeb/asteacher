@@ -1,0 +1,349 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+}
+
+.container {
+    width: 1310px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    background-color: #238;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 888;
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+}
+
+header ul li {
+    margin: 5px;
+    display: inline-block;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+li:nth-child(1) {
+    position: absolute;
+    left: 50px;
+    padding: 10px;
+    background-color: green;
+    border-radius: 10px;
+}
+
+li:nth-child(2) {
+    transform: translateX(-5%);
+}
+
+li:nth-child(2) .search {
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(228, 228, 228);
+    color: white;
+    font-size: 15px;
+}
+
+li:nth-child(2) .search:hover {
+    background-color: rgb(192, 192, 192);
+}
+
+li:nth-child(2) button {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    transform: translate(-100%) translateY(6px);
+    border: none;
+    font-size: 26px;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+}
+
+li:nth-child(2) button::after {
+    width: 50px;
+    height: 20px;
+    padding: 10px;
+    content: 'search';
+    font-size: 18px;
+    position: absolute;
+    left: 40px;
+    top: -10px;
+    display: none;
+    background-color: white;
+    color: blue;
+    font-family: Arial, Helv etica, sans-serif;
+    clip-path: polygon(0 49%, 40% 20%, 100% 20%, 100% 79%, 40% 80%, 0 49%, 0% 50%);
+}
+
+li:nth-child(2) button:hover::after {
+    display: block;
+}
+
+/* Main style */
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.programmLanguage {
+    width: 100%;
+}
+
+.languagelessons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    right: 0px;
+    z-index: 2;
+    background-color: red;
+    top: 80px;
+
+}
+
+.programmLanguage .languagelessons a {
+    text-decoration: none;
+    color: rgb(2, 36, 107);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.menuCatalog .bx-menu {
+    position: fixed;
+    top: 190px;
+    right: 23px;
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 20px;
+}
+
+.rightMenu.menulessons {
+    position: absolute;
+    left: 500px;
+}
+.lang:focus {
+    box-shadow: 0 0 10px white;
+
+}
+.block{
+    position: relative;
+    top: 50px;
+}
+main .block .rightMenu {
+    width: 25%;
+    min-height: 100%;
+    position: fixed;
+    background: #238;
+    transform: translateX(-500px) translateY(-65px);
+    z-index: 888;
+}
+
+.lessonsMenu {
+    width: 80%;
+    min-height: 100%;
+    border: 1px solid rgb(226, 31, 31);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.lessonsMenu  a {
+    text-decoration: none;
+    color: white;
+    background: #333;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.languagelessons a:hover {
+    color: crimson;
+}
+.Training {
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+    color: blue;
+    background: antiquewhite;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: 800;
+    position: relative;
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Training p {
+    width: 100%;
+    height: 150px;
+}
+
+.Training button {
+    width: 200px;
+    height: 40px;
+    padding: 3px;
+    background: blue;
+    border: 2px solid red;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: 0.3s ease;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.Training button:hover {
+    background: white;
+    color: blue;
+    border: 2px solid crimson;
+}
+
+.lessonsMenu a:nth-child(1) {
+    background-color: rgb(83, 253, 4);
+}
+
+.lessonsMenu a:focus {
+    background-color: rgb(83, 253, 4);
+}
+
+
+.htmlLessons {
+    width: 100%;
+    height: 50vh;
+    margin-top: 100px;
+}
+
+.html textarea {
+    width: 50%;
+    resize: none;
+    border: 2px solid darkblue;
+    background-color: #123;
+    color: white;
+    font-size: 20px;
+}
+
+.html {
+    width: 100%;
+    z-index: -3;
+}
+
+.runCode {
+    width: 150px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 45%;
+    opacity: 1;
+    top: 10px;
+}
+.enter{
+    position: absolute;
+    right: 44%;
+    opacity: 1;
+    top: 50px;
+    border: 1px solid #000;
+}
+.codeelement {
+    display: flex;
+    position: relative;
+    top: 55px;
+    box-shadow: 0 0 3px 5px gray;
+    border: 1px solid #000;
+}
+
+.runFinishedElement {
+    width: 40%;
+    height: 45vh;
+    background-color: #123;
+    color: white;
+    font-size: 20px;
+    border: 1px solid #000;
+}
+
+.html .htmlAbout{
+    width: 100%;
+    min-height: 55vh;
+}
+.pre{
+    position: relative;
+    bottom: 700px;
+}
+hr{
+    width: 20%;
+}
+#pre{
+    width: 330px;
+    height: 300px;
+    position: relative;
+    background-color: blue;
+    bottom: 200px;
+}
+.r{
+    color: rgb(0, 205, 212);
+}
+.l{
+    color: rgb(255, 30, 0);
+}
+
+.progress{
+    cursor: pointer;
+    position: absolute;
+    right: 45%;
+}
+.paragraph{
+    width: 50%;
+    position: absolute;
+    left: 500px;
+    top: 930px;
+}
+.example{
+    display: flex;
+}
+.example h1{
+    position: relative;
+    bottom: 15px;
+}
